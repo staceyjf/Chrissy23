@@ -97,6 +97,15 @@ video {
     }
 
     .right-card {
-        padding: 20px; 
+        padding: 20px;
+        display: none; /* Hide right card on mobile */
+    }
+
+    .left-card {
+        width: 100%; /* Make left card full width on mobile */
+    }
+
+    .card.open .left-card {
+        transform: rotateY(0deg); /* Keep the left card unflipped on mobile */
     }
 }
