@@ -97,6 +97,7 @@ video {
     .right-card {
         height: 100%;
         display: none;
+        background: #5c141e;
     }
 
     .left-card {
