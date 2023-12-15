@@ -107,12 +107,21 @@ video {
         cursor: pointer;
     }
 
+    .left-card .card-back {
+        display: none;
+    }
+
+
     /* Show right card when the show-right-card class is present */
     .card.show-right-card .right-card {
         display: flex;
     }
 
+    .card.show-right-card .left-card {
+        display: none;
+    }
+
     .card.open .left-card {
-        transform: rotateY(0deg); /* Keep the left card unflipped on mobile */
+        transform: rotateY(-180deg); /* Keep the left card unflipped on mobile */
     }
 }

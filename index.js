@@ -7,11 +7,12 @@ function isTouchDevice() {
 
 // Function to handle click or touch event based on device type
 function handleCardInteraction() {
-    card.classList.toggle('open');
 
     // Check if it's a touch device and toggle the show-right-card class accordingly
     if (isTouchDevice()) {
         card.classList.toggle('show-right-card');
+    } else {
+        card.classList.toggle('open');
     }
 }
 
