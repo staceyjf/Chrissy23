@@ -84,3 +84,19 @@ video {
 .right-card h2 {
     color: crimson
 }
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+    body {
+        margin: 20px; 
+    }
+
+    .card {
+        width: 100%; 
+        max-width: none; 
+    }
+
+    .right-card {
+        padding: 20px; 
+    }
+}
