@@ -2,7 +2,11 @@
 
 A delightful festive holiday card to spread joy and warmth during the holiday season.
 
-<img src="../Chrissy23/preview.png">
+<div align="center">
+
+  <img src="./preview.png" width="700" height="400">
+
+</div>
 
 Check out the deployed site at: https://staceyjf.github.io/Chrissy23/
 
