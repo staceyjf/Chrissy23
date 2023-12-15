@@ -15,7 +15,7 @@ body {
     transition: all 1s;
 }
 
-/* left card  */
+/* left card */
 .left-card {
     position: relative;
     width: 100%;
@@ -31,7 +31,7 @@ body {
 video {
     width: 100%;
     height: 100%;
-  }
+}
 
 .left-card .card-front,
 .left-card .card-back {
@@ -45,7 +45,7 @@ video {
 }
 
 .left-card .card-back {
-    background-color: #f4f4f4;
+    background: #f4f4f4;
     transform: rotateY(180deg);
 }
 
@@ -58,13 +58,11 @@ video {
     left: 150px;
 }
 
-/* right card  */
+/* right card */
 .right-card {
     width: 100%;
     height: 100%;
-    background: white;
-    text-align: center;
-    padding: 30px;
+    background: #f4f4f4;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
     color: #444;
@@ -72,17 +70,19 @@ video {
     top: 0;
     left: 0;
     z-index: 0; 
-    /* overwriting the default stacking order with z-index*/
+    /* overwriting the default stacking order with z-index */
 
-    /* positioning the internal text*/
+    /* positioning the internal text */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.right-card h2 {
-    color: crimson
+.right-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Adjust to 'contain' if necessary */
 }
 
 /* Media Query for Mobile */
@@ -96,9 +96,7 @@ video {
         max-width: none; 
     }
 
-    /* Hide right card by default on mobile */
     .right-card {
-        padding: 20px;
         display: none;
     }
 
@@ -111,17 +109,16 @@ video {
         display: none;
     }
 
-
     /* Show right card when the show-right-card class is present */
     .card.show-right-card .right-card {
         display: flex;
+        opacity: 1;
+        transition: opacity 1s;
     }
 
     .card.show-right-card .left-card {
-        display: none;
-    }
-
-    .card.open .left-card {
-        transform: rotateY(-180deg); /* Keep the left card unflipped on mobile */
+        opacity: 0;
+        pointer-events: none; 
+        transition: opacity 1s;
     }
 }
