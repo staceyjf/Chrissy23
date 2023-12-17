@@ -19,9 +19,7 @@ function handleCardInteraction() {
 }
 
 // Add click or touch event listener based on device type
-if (isTouchDevice()) {        card.classList.remove('open');
-
-
+if (isTouchDevice()) {      
     card.addEventListener('touchstart', handleCardInteraction);
 } else {
     card.addEventListener('click', handleCardInteraction);

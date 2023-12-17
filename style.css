@@ -137,12 +137,12 @@ video {
     .card.show-right-card .right-card {
         display: flex;
         opacity: 1;
-        transition: opacity 1s;
+        transition: opacity 2s;
     }
 
     .card.show-right-card .left-card {
         opacity: 0;
         pointer-events: none; 
-        transition: opacity 1s;
+        transition: opacity 2s;
     }
 }
