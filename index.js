@@ -7,20 +7,14 @@ function isTouchDevice() {
 
 // Function to handle click or touch event based on device type
 function handleCardInteraction() {
-    // Check if it's a touch device
+
+    // Check if it's a touch device and toggle the show-right-card class accordingly
     if (isTouchDevice()) {
-        // Toggle the show-right-card class
         card.classList.toggle('show-right-card');
-        
-        // Toggle the open class based on the current state of show-right-card
-        card.classList.toggle('open', card.classList.contains('show-right-card'));
+        card.classList.remove('open');
     } else {
-        // Toggle the open class
         card.classList.toggle('open');
-        
-        // Toggle the show-right-card class based on the current state of open
-        card.classList.toggle('show-right-card', card.classList.contains('open'));
-        console.log('I am a desktop');
+        card.classList.remove('show-right-card');
     }
 }
 
