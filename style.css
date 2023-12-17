@@ -13,6 +13,7 @@ body {
     perspective: 1400px;
     left: 0;
     transition: all 1s;
+    z-index: 2;
 }
 
 /* left card */

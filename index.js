@@ -1,7 +1,6 @@
 const card = document.querySelector('.card');
 const arrow = document.querySelector('#arrow');
 
-
 // Function to check if touch events are supported
 function isTouchDevice() {
     return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
