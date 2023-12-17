@@ -1,4 +1,6 @@
 const card = document.querySelector('.card');
+const arrow = document.querySelector('#arrow');
+
 
 // Function to check if touch events are supported
 function isTouchDevice() {
@@ -23,5 +25,6 @@ if (isTouchDevice()) {
     card.addEventListener('touchstart', handleCardInteraction);
 } else {
     card.addEventListener('click', handleCardInteraction);
+    arrow.addEventListener('click', handleCardInteraction);
     console.log('yes i clciked')
 }
