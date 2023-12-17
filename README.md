@@ -4,7 +4,7 @@ A delightful festive holiday card to spread joy and warmth during the holiday se
 
 <div align="center">
 
-  <img src="./preview.png" width="700" height="400">
+  <img src="./img/preview.png" width="700" height="400">
 
 </div>
 
