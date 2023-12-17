@@ -117,14 +117,16 @@ video {
     }
 
     .right-card {
-        height: 100%;
+        /* height: 100%; */
         display: none;
         background: #5c141e;
+        box-shadow: none;
     }
 
     .left-card {
-        width: 100%; /* Make left card full width on mobile */
+        /* width: 100%; Make left card full width on mobile */
         cursor: pointer;
+        box-shadow: none;
     }
 
     .left-card .card-back {
