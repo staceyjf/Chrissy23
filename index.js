@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
         card.addEventListener('touchend', handleCardInteraction);
     } else {
         card.addEventListener('click', handleCardInteraction);
-        arrow.addEventListener('click', handleCardInteraction);
         console.log('event listener added');
     }
 });
