@@ -19,9 +19,11 @@ function handleCardInteraction() {
     }
 }
 
+console.log(card, arrow);
+
 // Add click or touch event listener based on device type
 if (isTouchDevice()) {      
-    card.addEventListener('touchstart', handleCardInteraction);
+    card.addEventListener('touchend', handleCardInteraction);
 } else {
     card.addEventListener('click', handleCardInteraction);
     arrow.addEventListener('click', handleCardInteraction);
